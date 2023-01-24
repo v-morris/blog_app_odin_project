@@ -10,6 +10,10 @@
     } %></li>
 </ul>
 
-# had to run the below commands to get the Turbo to work
-# rails importmap:install
-# rails turbo:install stimulus:install
+<h2>Comments</h2>
+<%= render @article.comments %>
+
+<h2>Add a comment:</h2>
+<%= render 'comments/form' %>
+
+<%= link_to "Back", articles_path %>
